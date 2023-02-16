@@ -8,9 +8,105 @@ html {
 body {
   font-family: "Dosis", sans-serif;
   margin: 0;
+  background-color: #222831;
+}
+body.dark {
+  background: #EEEEEE;
+}
+body.dark h1 {
+  color: #222831;
+}
+body.dark h2 {
+  color: #222831;
+}
+body.dark h3 {
+  color: #222831;
+}
+body.dark .article__container .sections__container .home__container .My-portfolio .menu__nav-container .a__button {
+  border: 2px solid #00ADB5;
+  padding: 15px;
+  border-radius: 5px;
+  color: #222831;
+  text-decoration: none;
+  font-size: 30px;
+}
+body.dark .article__container .sections__container .home__container .My-portfolio .menu__nav-container .a__button:hover {
+  background-color: #00ADB5;
+  box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
+  color: #EEEEEE;
+}
+body.dark .article__container .sections__container .about__container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+body.dark .article__container .sections__container .about__container .info__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+body.dark .article__container .sections__container .about__container .info__container .figure__container {
+  padding: 2rem;
+}
+body.dark .article__container .sections__container .about__container .info__container .pCV__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body.dark .article__container .sections__container .about__container .info__container .pCV__container .p__container p {
+  color: #222831;
+}
+body.dark .article__container .sections__container .about__container .info__container .pCV__container .button__container {
+  display: flex;
+  gap: 5rem;
+}
+body.dark .article__container .sections__container .about__container .info__container .pCV__container .button__container .a__button {
+  border: 2px solid #00ADB5;
+  padding: 15px;
+  border-radius: 5px;
+  color: #222831;
+  text-decoration: none;
+  font-size: 30px;
+}
+body.dark .article__container .sections__container .about__container .info__container .pCV__container .button__container .a__button:hover {
+  background-color: #00ADB5;
+  box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
+  color: #222831;
+}
+body.dark .article__container .sections__container .contact__container .form__container .label__card {
+  color: #222831;
+}
+body.dark .article__container .sections__container .contact__container .form__container .input__card {
+  font-weight: 700;
+  font-size: 20px;
+  border: 3px solid #00ADB5;
+  border-radius: 0.5rem;
+  color: #00ADB5;
+  padding: 1rem;
+  resize: none;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+body.dark .article__container .sections__container .contact__container .form__container button {
+  border: 2px solid #00ADB5;
+  padding: 15px;
+  border-radius: 5px;
+  color: #222831;
+  text-decoration: none;
+  font-size: 30px;
+  background: transparent;
+}
+body.dark .article__container .sections__container .contact__container .form__container button:hover {
+  background-color: #00ADB5;
+  box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
+  color: #EEEEEE;
 }
 body #particles-js {
-  background-color: #222831;
   position: fixed;
   top: 0;
   width: 100%;
@@ -21,7 +117,13 @@ body .article__container .sections__container .home__container {
   width: 100%;
   height: 100vh;
 }
-body .article__container .sections__container .My-portfolio .menu__nav-container {
+body .article__container .sections__container .home__container .My-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 500px;
+}
+body .article__container .sections__container .home__container .My-portfolio .menu__nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,34 +131,80 @@ body .article__container .sections__container .My-portfolio .menu__nav-container
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-body .article__container .sections__container .My-portfolio .menu__nav-container .a__button {
+body .article__container .sections__container .home__container .My-portfolio .menu__nav-container .a__button {
   border: 2px solid #00ADB5;
   padding: 15px;
   border-radius: 5px;
   color: #EEEEEE;
   text-decoration: none;
+  font-size: 30px;
 }
-body .article__container .sections__container .My-portfolio .menu__nav-container .a__button:hover {
+body .article__container .sections__container .home__container .My-portfolio .menu__nav-container .a__button:hover {
   background-color: #00ADB5;
   box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
   color: #222831;
 }
-body .article__container .sections__container .inicio__container {
+body .article__container .sections__container .home__container .My-portfolio .moon-sun__container .toggle__container {
+  background: #00ADB5;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+body .article__container .sections__container .home__container .My-portfolio .moon-sun__container .toggle__container::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  background: white;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 5px 5px black;
+}
+body .article__container .sections__container .home__container .My-portfolio .moon-sun__container .toggle__container.active::after {
+  right: 0;
+  left: unset;
+  box-shadow: 0px 0px 5px 5px #00ADB5;
+}
+body .article__container .sections__container .home__container .My-portfolio .moon-sun__container .toggle__container .span1 {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background-color: none;
+  color: black;
+}
+body .article__container .sections__container .home__container .My-portfolio .moon-sun__container .toggle__container .span2 {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background-color: none;
+  color: white;
+}
+body .article__container .sections__container .home__container .inicio__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 80%;
 }
-body .article__container .sections__container .inicio__container .titles__container {
+body .article__container .sections__container .home__container .inicio__container .titles__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 200px;
-  width: 800px;
+  width: 70%;
+  font-size: 27px;
 }
-body .article__container .sections__container .inicio__container .titles__container .console-container {
+body .article__container .sections__container .home__container .inicio__container .titles__container .console-container {
   font-family: Khula;
   font-size: 3em;
   text-align: center;
@@ -68,29 +216,29 @@ body .article__container .sections__container .inicio__container .titles__contai
   right: 0;
   margin: auto;
 }
-body .article__container .sections__container .inicio__container .titles__container .console-underscore {
+body .article__container .sections__container .home__container .inicio__container .titles__container .console-underscore {
   display: inline-block;
   position: relative;
   top: -0.14em;
   left: 10px;
 }
-body .article__container .sections__container .inicio__container .figure__container .img__container .badge {
+body .article__container .sections__container .home__container .inicio__container .figure__container .img__container .badge {
   display: block;
   position: relative;
   width: 20rem;
   height: 20rem;
   cursor: pointer;
-  background: url(../assets/Christian.png) no-repeat 100% 50%;
+  background: url(../assets/Christian.svg) no-repeat 100% 50%;
   background-size: 100%;
   border-radius: 50%;
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
 }
-body .article__container .sections__container .inicio__container .figure__container .img__container .badge:hover {
+body .article__container .sections__container .home__container .inicio__container .figure__container .img__container .badge:hover {
   box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
   background-position: 0% 50%;
 }
-body .article__container .sections__container .inicio__container .figure__container .img__container .badge:hover .text {
+body .article__container .sections__container .home__container .inicio__container .figure__container .img__container .badge:hover .text {
   transform: rotate(-45deg) translate(0px) rotate(-315deg);
   background: rgba(0, 173, 181, 0.5);
   width: 20rem;
@@ -101,7 +249,7 @@ body .article__container .sections__container .inicio__container .figure__contai
   margin-left: -10rem;
   transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
 }
-body .article__container .sections__container .inicio__container .figure__container .img__container .badge .text {
+body .article__container .sections__container .home__container .inicio__container .figure__container .img__container .badge .text {
   display: block;
   position: absolute;
   width: 10rem;
@@ -146,7 +294,7 @@ body .article__container .sections__container .about__container .info__container
 }
 body .article__container .sections__container .about__container .info__container .pCV__container .p__container p {
   font-weight: 400;
-  font-size: 35px;
+  font-size: 50px;
   color: #EEEEEE;
 }
 body .article__container .sections__container .about__container .info__container .pCV__container .button__container {
@@ -159,6 +307,7 @@ body .article__container .sections__container .about__container .info__container
   border-radius: 5px;
   color: #EEEEEE;
   text-decoration: none;
+  font-size: 30px;
 }
 body .article__container .sections__container .about__container .info__container .pCV__container .button__container .a__button:hover {
   background-color: #00ADB5;
@@ -252,6 +401,100 @@ body .article__container .sections__container .skills__container .frontandback__
   scale: 1.2;
   transition: 0.8s;
 }
+body .article__container .sections__container .experiencie__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .article__container .sections__container .experiencie__container .carrousel__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 304px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  max-width: 90vw;
+  overflow: hidden;
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .slick-arrow {
+  border-radius: 30px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border: 0;
+  cursor: pointer;
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .slick-arrow:focus {
+  outline: 0;
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .slick-arrow svg {
+  width: 12px;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .slick-prev {
+  left: 0px;
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .slick-next {
+  right: 0px;
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .projects__container {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .projects__container a {
+  position: relative;
+  width: 500px;
+  padding: 0 18px;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .projects__container a h4 {
+  position: absolute;
+  z-index: 1;
+  font-size: 35px;
+  line-height: 23px;
+  color: black;
+  padding: 15px;
+  margin: 0;
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .projects__container a h4 small {
+  font-size: 30px;
+  display: block;
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .projects__container a .imagen {
+  width: 500px;
+  height: 300px;
+  background: yellow;
+  border-radius: 15px;
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .projects__container a .imagen img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .projects__container a .imagen img:hover {
+  opacity: 0.85;
+}
 body .article__container .sections__container .contact__container {
   width: 100%;
   height: 100vh;
@@ -271,6 +514,7 @@ body .article__container .sections__container .contact__container .form__contain
 }
 body .article__container .sections__container .contact__container .form__container .label__card {
   margin-bottom: 1rem;
+  font-size: 30px;
 }
 body .article__container .sections__container .contact__container .form__container .input__card {
   font-weight: 700;
@@ -278,10 +522,24 @@ body .article__container .sections__container .contact__container .form__contain
   border: 3px solid #00ADB5;
   border-radius: 0.5rem;
   color: #00ADB5;
-  padding: 1.5rem;
+  padding: 1rem;
   resize: none;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+body .article__container .sections__container .contact__container .form__container button {
+  border: 2px solid #00ADB5;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  background: transparent;
+}
+body .article__container .sections__container .contact__container .form__container button:hover {
+  background-color: #00ADB5;
+  box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
+  color: #222831;
 }
 body .footer__container {
   margin-top: 1rem;
@@ -307,7 +565,7 @@ body .footer__container small a:hover {
 h1 {
   color: #EEEEEE;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 80px;
   margin-top: 2.5rem;
 }
 

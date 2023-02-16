@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg" href="../assets/favicon.svg" />
+    <link rel="icon" type="image/svg" href="./assets/favicon.svg" />
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,20 +25,28 @@
                     <nav class="menu__nav-container">
                         <a href="#about" class="a__button">Sobre mi</a>
                         <a href="#skills" class="a__button">Tecnologías</a>
-                        <a href="#project" class="a__button">Proyectos</a>
+                        <a href="#experience" class="a__button">Proyectos</a>
                         <a href="#contact" class="a__button">Contáctame</a>
                         <!-- Falta toogle para idiomas y colores-->
                     </nav>
+                    <div class="moon-sun__container">
+                        <button class="toggle__container" id="darkandlight">
+                            <span class="span1"><i class="fas fa-moon"></i></span>
+                            <span class="span2"><i class="fas fa-sun"></i></span>
+                        </button>
+                    </div>
                 </header>
 
                 <div class="inicio__container">
                     <div class="titles__container">
                         <h1>¡Bienvenidos a mi Portafolio!</h1>
-                        
 
-                        <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div> <!-- &#95; ES UN GUIN BAJO -->
 
-                        
+                        <div class='console-container'><span id='text'></span>
+                            <div class='console-underscore' id='console'>&#95;</div>
+                        </div> <!-- &#95; ES UN GUIN BAJO -->
+
+
 
                     </div>
 
@@ -47,7 +56,7 @@
                             <div class="badge">
                                 <div class="text">¡Hola!</div>
                             </div>
-                            
+
                         </figure>
                     </figcaption>
                 </div>
@@ -69,7 +78,8 @@
                     <div class="pCV__container">
                         <h3>Sobre mi</h3>
                         <div class="p__container">
-                            <p>Mi nombre es <strong>Christian Reyes</strong>  con nacionalidad peruana <img src="../assets/peru.svg" alt="Peru" width="30px"> y tengo 27 años. Llevé un
+                            <p>Mi nombre es <strong>Christian Reyes</strong> con nacionalidad peruana <img
+                                    src="./assets/peru.svg" alt="Peru" width="30px"> y tengo 27 años. Llevé un
                                 Bootcamp en
                                 el "Instituto de Educación Superior en Perú", en el cual
                                 desarrollé mis habilidades tanto en Frontend como Backend.</p>
@@ -102,79 +112,173 @@
             </section>
 
             <section id="skills" class="skills__container">
-                <div class="general__container">
-                    <h3>General</h3>
-                    <div class="gen__container">
-                        <img src="../assets/visualstudio.svg" alt="" width="90px">
-                        <img src="../assets/git.svg" alt="" width="90px">
-                        <img src="../assets/github.svg" alt="" width="90px">
-                    </div>
-                </div>
+                <h3>Tecnologías</h3>
                 <div class="frontandback__container">
                     <div class="frontend__container">
                         <h3>Frontend</h3>
                         <div class="languajes__container">
-                            <img src="../assets/html.svg" alt="" width="90px">
-                            <img src="../assets/css.svg" alt="" width="90px">
-                            <img src="../assets/js.svg" alt="" width="90px">
-                            <img src="../assets/react.svg" alt="" width="90px">
-                            <img src="../assets/angular.svg" alt="" width="90px">
-                            <img src="../assets/sass.svg" alt="" width="90px">
-                            <img src="../assets/boostrap.svg" alt="" width="90px">
+                            <img src="./assets/html.svg" alt="" width="150px">
+                            <img src="./assets/css.svg" alt="" width="150px">
+                            <img src="./assets/js.svg" alt="" width="150px">
+                            <img src="./assets/react.svg" alt="" width="150px">
+                            <img src="./assets/angular.svg" alt="" width="150px">
+                            <img src="./assets/sass.svg" alt="" width="150px">
+                            <img src="./assets/boostrap.svg" alt="" width="150px">
                         </div>
-    
+
                     </div>
-    
+
                     <div class="brain__container">
-                        
+
                         <figcaption class="figure__container">
                             <figure class="img__container">
                                 <script
                                     src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_iqbweiiz.json"
-                                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                                    background="transparent" speed="1" style="width: 600px; height: 600px;" loop
                                     autoplay></lottie-player>
-                                
+
                             </figure>
                         </figcaption>
                     </div>
-    
+
                     <div class=" backend__container">
                         <h3>Backend</h3>
                         <div class="languajes__container">
-                            <img src="../assets/php.svg" alt="img-php" width="90px">
-                            <img src="../assets/python.svg" alt="img-python" width="90px">
-                            <img src="../assets/mongodb.svg" alt="img-mongodb" width="90px">
-                            <img src="../assets/mysql.svg" alt="img-mysql" width="90px">
-                            <img src="../assets/django.svg" alt="img-django" width="90px">
-                            <img src="../assets/nodejs.svg" alt="img-nodejs" width="90px">
+                            <img src="./assets/php.svg" alt="img-php" width="150px">
+                            <img src="./assets/python.svg" alt="img-python" width="150px">
+                            <img src="./assets/mongodb.svg" alt="img-mongodb" width="150px">
+                            <img src="./assets/mysql.svg" alt="img-mysql" width="150px">
+                            <img src="./assets/django.svg" alt="img-django" width="150px">
+                            <img src="./assets/nodejs.svg" alt="img-nodejs" width="150px">
                         </div>
+                    </div>
+                </div>
+                <div class="general__container">
+                    <h3>General</h3>
+                    <div class="gen__container">
+                        <img src="./assets/visualstudio.svg" alt="" width="150px">
+                        <img src="./assets/git.svg" alt="" width="150px">
+                        <img src="./assets/github.svg" alt="" width="150px">
                     </div>
                 </div>
 
             </section>
 
             <section id="experience" class="experiencie__container">
+                <h3>Mis Proyectos</h3>
+                <div class="carrousel__container">
+                    <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev"
+                        onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                            class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512">
+                            <path fill="currentColor"
+                                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <div class="projects__container" id="track">
+                        <div class="slick">
+                            <a href="https://cjrs1.github.io/Mi-Portafolio/" target="__blank" rel="noopener noreferrer">
+                                <div class="imagen">
+                                    <h4><small>Portafolio</small> Hecho con React JS</h4>
+                                    <img src="./assets/portfolioreact.svg" alt="PortfolioReact">
+                                </div>
+                            </a>
+                        </div>
+
+                        <a href="https://cjrs1.github.io/Acrostic/" target="__blank" rel="noopener noreferrer">
+                            <div class="imagen">
+                                <h4><small>Acrostic</small> Hecho con HTML y CSS</h4>
+                                <img src="./assets/acrostic.svg" alt="Acrostic">
+                            </div>
+                        </a>
+                        <a href="https://cjrs1.github.io/Cinemeros/" target="__blank" rel="noopener noreferrer">
+                            <div class="imagen">
+                                <h4><small>Cinemeros</small> Hecho con React JS</h4>
+                                <img src="./assets/cinemeros.svg" alt="Cinemeros">
+                            </div>
+                        </a>
+                        <a href="https://cjrs1.github.io/Mi-Portafolio/" target="__blank" rel="noopener noreferrer">
+                            <div class="imagen">
+                                <h4><small>Portafolio</small> Hecho con React JS</h4>
+                                <img src="./assets/portfolioreact.svg" alt="PortfolioReact">
+                            </div>
+                        </a>
+                        <a href="https://cjrs1.github.io/Acrostic/" target="__blank" rel="noopener noreferrer">
+                            <div class="imagen">
+                                <h4><small>Acrostic</small> Hecho con HTML y CSS</h4>
+                                <img src="./assets/acrostic.svg" alt="Acrostic">
+                            </div>
+                        </a>
+                        <a href="https://cjrs1.github.io/Cinemeros/" target="__blank" rel="noopener noreferrer">
+                            <div class="imagen">
+                                <h4><small>Cinemeros</small> Hecho con React JS</h4>
+                                <img src="./assets/cinemeros.svg" alt="Cinemeros">
+                            </div>
+                        </a>
+                        <a href="https://cjrs1.github.io/Mi-Portafolio/" target="__blank" rel="noopener noreferrer">
+                            <div class="imagen">
+                                <h4><small>Portafolio</small> Hecho con React JS</h4>
+                                <img src="./assets/portfolioreact.svg" alt="PortfolioReact">
+                            </div>
+                        </a>
+                        <a href="https://cjrs1.github.io/Acrostic/" target="__blank" rel="noopener noreferrer">
+                            <div class="imagen">
+                                <h4><small>Acrostic</small> Hecho con HTML y CSS</h4>
+                                <img src="./assets/acrostic.svg" alt="Acrostic">
+                            </div>
+                        </a>
+                        <a href="https://cjrs1.github.io/Cinemeros/" target="__blank" rel="noopener noreferrer">
+                            <div class="imagen">
+                                <h4><small>Cinemeros</small> Hecho con React JS</h4>
+                                <img src="./assets/cinemeros.svg" alt="Cinemeros">
+                            </div>
+                        </a>
+                        <a href="https://cjrs1.github.io/Mi-Portafolio/" target="__blank" rel="noopener noreferrer">
+                            <div class="imagen">
+                                <h4><small>Portafolio</small> Hecho con React JS</h4>
+                                <img src="./assets/portfolioreact.svg" alt="PortfolioReact">
+                            </div>
+                        </a>
+                        
+                    </div>
+
+                    <button class="slick-arrow slick-next" id="button-next" data-button="button-next"
+                        onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                            class="svg-inline--fa fa-chevron-right fa-w-10" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="currentColor"
+                                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
             </section>
 
             <section id="contact" class="contact__container">
                 <h3>Contáctame</h3>
-                <form action="" class="form__container">
+                <form action="https://formsubmit.co/e177d422f7cc237c2095ad95c69f88c6" method="POST" class="form__container">
 
                     <label for="" class="label__card">Nombre :</label>
-                    <input type="text" class="input__card" placeholder="Ej. Christian">
+                    <input type="text" name="name" class="input__card" placeholder="Ej. Christian">
 
                     <label for="" class="label__card">Apellido :</label>
-                    <input type="text" class="input__card" placeholder="Ej. Reyes">
+                    <input type="text" name="lastname" class="input__card" placeholder="Ej. Reyes">
 
                     <label for="email" class="label__card">Email :</label>
-                    <input type="" class="input__card" placeholder="Ej. reyes.christian@pucp.pe">
+                    <input type="email" name="email" class="input__card" placeholder="Ej. reyes.christian@pucp.pe">
 
-                    <label for="" class="label__card">Mensaje :</label>
-                    <textarea name="" id="" class="input__card" cols="30" rows="10"
+                    <label for="comments" class="label__card">Mensaje :</label>
+                    <textarea name="comments" id="" class="input__card" cols="60" rows="10"
                         placeholder="Hola Christian, ¿cómo te va? Te escribo por si te interesaría ..."
                         required></textarea>
-
+                    <button type='submit' value="send" className='btn btn-primary'>Enviar mensaje</button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
             </section>
 
@@ -190,11 +294,11 @@
     </footer>
 
 
-    <script src="../js/main.js"></script>
-    <script src="../js/particles-js/particles.js"></script>
-    <script src="../js/particles-js/particlesjs-config.js"></script>
-    <script src="../js/texteffect-js/texteffect.js"></script>
-
+    <script src="./js/main.js"></script>
+    <script src="./js/particles-js/particles.js"></script>
+    <script src="./js/particles-js/particlesjs-config.js"></script>
+    <script src="./js/texteffect-js/texteffect.js"></script>
+    <script src="./js/darkandlight-js/darkandlight.js"></script>
 </body>
 
 </html>
