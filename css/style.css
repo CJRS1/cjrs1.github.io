@@ -10,19 +10,19 @@ body {
   margin: 0;
   background-color: #222831;
 }
-body.dark {
+body.light {
   background: #EEEEEE;
 }
-body.dark h1 {
+body.light h1 {
   color: #222831;
 }
-body.dark h2 {
+body.light h2 {
   color: #222831;
 }
-body.dark h3 {
+body.light h3 {
   color: #222831;
 }
-body.dark .article__container .sections__container .home__container .My-portfolio .menu__nav-container .a__button {
+body.light .article__container .sections__container .home__container .My-portfolio .menu__nav-container .a__button {
   border: 2px solid #00ADB5;
   padding: 15px;
   border-radius: 5px;
@@ -30,12 +30,12 @@ body.dark .article__container .sections__container .home__container .My-portfoli
   text-decoration: none;
   font-size: 30px;
 }
-body.dark .article__container .sections__container .home__container .My-portfolio .menu__nav-container .a__button:hover {
+body.light .article__container .sections__container .home__container .My-portfolio .menu__nav-container .a__button:hover {
   background-color: #00ADB5;
   box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
   color: #EEEEEE;
 }
-body.dark .article__container .sections__container .about__container {
+body.light .article__container .sections__container .about__container {
   display: flex;
   width: 100%;
   height: 100vh;
@@ -43,29 +43,29 @@ body.dark .article__container .sections__container .about__container {
   align-items: center;
   gap: 2rem;
 }
-body.dark .article__container .sections__container .about__container .info__container {
+body.light .article__container .sections__container .about__container .info__container {
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
 }
-body.dark .article__container .sections__container .about__container .info__container .figure__container {
+body.light .article__container .sections__container .about__container .info__container .figure__container {
   padding: 2rem;
 }
-body.dark .article__container .sections__container .about__container .info__container .pCV__container {
+body.light .article__container .sections__container .about__container .info__container .pCV__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body.dark .article__container .sections__container .about__container .info__container .pCV__container .p__container p {
+body.light .article__container .sections__container .about__container .info__container .pCV__container .p__container p {
   color: #222831;
 }
-body.dark .article__container .sections__container .about__container .info__container .pCV__container .button__container {
+body.light .article__container .sections__container .about__container .info__container .pCV__container .button__container {
   display: flex;
   gap: 5rem;
 }
-body.dark .article__container .sections__container .about__container .info__container .pCV__container .button__container .a__button {
+body.light .article__container .sections__container .about__container .info__container .pCV__container .button__container .a__button {
   border: 2px solid #00ADB5;
   padding: 15px;
   border-radius: 5px;
@@ -73,15 +73,15 @@ body.dark .article__container .sections__container .about__container .info__cont
   text-decoration: none;
   font-size: 30px;
 }
-body.dark .article__container .sections__container .about__container .info__container .pCV__container .button__container .a__button:hover {
+body.light .article__container .sections__container .about__container .info__container .pCV__container .button__container .a__button:hover {
   background-color: #00ADB5;
   box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
   color: #222831;
 }
-body.dark .article__container .sections__container .contact__container .form__container .label__card {
+body.light .article__container .sections__container .contact__container .form__container .label__card {
   color: #222831;
 }
-body.dark .article__container .sections__container .contact__container .form__container .input__card {
+body.light .article__container .sections__container .contact__container .form__container .input__card {
   font-weight: 700;
   font-size: 20px;
   border: 3px solid #00ADB5;
@@ -92,7 +92,7 @@ body.dark .article__container .sections__container .contact__container .form__co
   width: 100%;
   margin-bottom: 2rem;
 }
-body.dark .article__container .sections__container .contact__container .form__container button {
+body.light .article__container .sections__container .contact__container .form__container button {
   border: 2px solid #00ADB5;
   padding: 15px;
   border-radius: 5px;
@@ -101,10 +101,27 @@ body.dark .article__container .sections__container .contact__container .form__co
   font-size: 30px;
   background: transparent;
 }
-body.dark .article__container .sections__container .contact__container .form__container button:hover {
+body.light .article__container .sections__container .contact__container .form__container button:hover {
   background-color: #00ADB5;
   box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
   color: #EEEEEE;
+}
+body.light .footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 10px;
+}
+body.light .footer__container small {
+  color: #222831;
+}
+body.light .footer__container small a {
+  text-decoration: none;
+  color: #222831;
+}
+body.light .footer__container small a:hover {
+  color: #00ADB5;
 }
 body #particles-js {
   position: fixed;
@@ -144,6 +161,21 @@ body .article__container .sections__container .home__container .My-portfolio .me
   box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
   color: #222831;
 }
+body .article__container .sections__container .home__container .My-portfolio .languages__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+body .article__container .sections__container .home__container .My-portfolio .languages__container button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+body .article__container .sections__container .home__container .My-portfolio .languages__container button:hover {
+  scale: 1.2;
+}
 body .article__container .sections__container .home__container .My-portfolio .moon-sun__container .toggle__container {
   background: #00ADB5;
   border-radius: 1000px;
@@ -159,7 +191,7 @@ body .article__container .sections__container .home__container .My-portfolio .mo
   width: 35px;
   height: 35px;
   position: absolute;
-  background: white;
+  background: #EEEEEE;
   top: 0;
   left: 0;
   right: unset;
@@ -186,7 +218,16 @@ body .article__container .sections__container .home__container .My-portfolio .mo
   line-height: 30px;
   display: block;
   background-color: none;
-  color: white;
+  color: #EEEEEE;
+}
+body .article__container .sections__container .home__container .My-portfolio .menu__container {
+  background: none;
+  border: none;
+  font-size: 40px;
+  padding: 0 20px;
+  line-height: 60px;
+  color: #00ADB5;
+  display: none;
 }
 body .article__container .sections__container .home__container .inicio__container {
   display: flex;
@@ -209,7 +250,7 @@ body .article__container .sections__container .home__container .inicio__containe
   font-size: 3em;
   text-align: center;
   display: flex;
-  color: white;
+  color: #EEEEEE;
   top: 0;
   bottom: 0;
   left: 0;
@@ -262,7 +303,7 @@ body .article__container .sections__container .home__container .inicio__containe
   font-size: 2rem;
   font-family: Raleway, sans-serif;
   text-align: center;
-  color: #fff;
+  color: #EEEEEE;
   border-radius: 50%;
   background: #00ADB5;
   transform: rotate(-180deg) translate(-10rem) rotate(180deg);
@@ -531,7 +572,7 @@ body .article__container .sections__container .contact__container .form__contain
   border: 2px solid #00ADB5;
   padding: 15px;
   border-radius: 5px;
-  color: white;
+  color: #EEEEEE;
   text-decoration: none;
   font-size: 30px;
   background: transparent;
@@ -542,13 +583,11 @@ body .article__container .sections__container .contact__container .form__contain
   color: #222831;
 }
 body .footer__container {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
+  margin: 10px;
 }
 body .footer__container small {
   color: #EEEEEE;
@@ -556,7 +595,6 @@ body .footer__container small {
 body .footer__container small a {
   text-decoration: none;
   color: #EEEEEE;
-  text-decoration: underline;
 }
 body .footer__container small a:hover {
   color: #00ADB5;

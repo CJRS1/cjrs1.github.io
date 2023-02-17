@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg" href="./assets/favicon.svg" />
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c84417f807.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,12 +30,28 @@
                         <a href="#contact" class="a__button">Contáctame</a>
                         <!-- Falta toogle para idiomas y colores-->
                     </nav>
+                    <div class="languages__container">
+                        <button class="spanish">
+                            <img src="./assets/per.svg" alt="" width="50px">
+                        </button>
+                        <button class="portuguese">
+                            <img src="./assets/brasil.svg" alt="" width="50px">
+                        </button>
+                        <button class="english">
+                            <img src="./assets/eeuu.svg" alt="" width="50px">
+                        </button>
+                    </div>
                     <div class="moon-sun__container">
                         <button class="toggle__container" id="darkandlight">
                             <span class="span1"><i class="fas fa-moon"></i></span>
                             <span class="span2"><i class="fas fa-sun"></i></span>
                         </button>
                     </div>
+                    
+                    <button class="menu__container">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    
                 </header>
 
                 <div class="inicio__container">
@@ -67,11 +84,10 @@
 
                     <figcaption class="figure__container">
                         <figure class="img__container">
-                            <script
-                                src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                             <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_iorpbol0.json"
                                 background="transparent" speed="1" style="width: 300px; height: 300px;" loop
-                                autoplay></lottie-player>
+                                autoplay>
+                            </lottie-player>
                         </figure>
                     </figcaption>
 
@@ -117,13 +133,13 @@
                     <div class="frontend__container">
                         <h3>Frontend</h3>
                         <div class="languajes__container">
-                            <img src="./assets/html.svg" alt="" width="150px">
-                            <img src="./assets/css.svg" alt="" width="150px">
-                            <img src="./assets/js.svg" alt="" width="150px">
-                            <img src="./assets/react.svg" alt="" width="150px">
-                            <img src="./assets/angular.svg" alt="" width="150px">
-                            <img src="./assets/sass.svg" alt="" width="150px">
-                            <img src="./assets/boostrap.svg" alt="" width="150px">
+                            <img src="./assets/html.svg" alt="" width="100px">
+                            <img src="./assets/css.svg" alt="" width="100px">
+                            <img src="./assets/js.svg" alt="" width="100px">
+                            <img src="./assets/react.svg" alt="" width="100px">
+                            <img src="./assets/angular.svg" alt="" width="100px">
+                            <img src="./assets/sass.svg" alt="" width="100px">
+                            <img src="./assets/boostrap.svg" alt="" width="100px">
                         </div>
 
                     </div>
@@ -145,21 +161,21 @@
                     <div class=" backend__container">
                         <h3>Backend</h3>
                         <div class="languajes__container">
-                            <img src="./assets/php.svg" alt="img-php" width="150px">
-                            <img src="./assets/python.svg" alt="img-python" width="150px">
-                            <img src="./assets/mongodb.svg" alt="img-mongodb" width="150px">
-                            <img src="./assets/mysql.svg" alt="img-mysql" width="150px">
-                            <img src="./assets/django.svg" alt="img-django" width="150px">
-                            <img src="./assets/nodejs.svg" alt="img-nodejs" width="150px">
+                            <img src="./assets/php.svg" alt="img-php" width="100px">
+                            <img src="./assets/python.svg" alt="img-python" width="100px">
+                            <img src="./assets/mongodb.svg" alt="img-mongodb" width="100px">
+                            <img src="./assets/mysql.svg" alt="img-mysql" width="100px">
+                            <img src="./assets/django.svg" alt="img-django" width="100px">
+                            <img src="./assets/nodejs.svg" alt="img-nodejs" width="100px">
                         </div>
                     </div>
                 </div>
                 <div class="general__container">
                     <h3>General</h3>
                     <div class="gen__container">
-                        <img src="./assets/visualstudio.svg" alt="" width="150px">
-                        <img src="./assets/git.svg" alt="" width="150px">
-                        <img src="./assets/github.svg" alt="" width="150px">
+                        <img src="./assets/visualstudio.svg" alt="" width="100px">
+                        <img src="./assets/git.svg" alt="" width="100px">
+                        <img src="./assets/github.svg" alt="" width="100px">
                     </div>
                 </div>
 
@@ -294,11 +310,12 @@
     </footer>
 
 
-    <script src="./js/main.js"></script>
+    <script src="./js/carrousel-js/carrousel.js"></script>
     <script src="./js/particles-js/particles.js"></script>
     <script src="./js/particles-js/particlesjs-config.js"></script>
     <script src="./js/texteffect-js/texteffect.js"></script>
     <script src="./js/darkandlight-js/darkandlight.js"></script>
+    
 </body>
 
 </html>

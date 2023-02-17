@@ -1,5 +1,9 @@
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['HOLA, SOY CHRISTIAN REYES', 'INGENIERO MECATRONICO', 'DESARROLLADOR FRONTEND','DESARROLLADOR BACKEND'], 'text', ['#00ADB5']);
+if(screen.width>1024){
+    consoleText(['HOLA, SOY CHRISTIAN REYES', 'INGENIERO MECATRONICO', 'DESARROLLADOR FRONTEND','DESARROLLADOR BACKEND'], 'text', ['#00ADB5']);
+} else if(screen.width<1024){
+    consoleText(['HOLA', 'SOY', 'INGENIERO', 'MECATRONICO', 'DESARROLLADOR','FRONTEND','BACKEND'], 'text', ['#00ADB5']);
+}
 
 function consoleText(words, id, colors) {
     if (colors === undefined) colors = ['#fff'];

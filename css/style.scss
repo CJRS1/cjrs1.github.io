@@ -2,9 +2,10 @@
 
 $gap: 2.5rem;
 $font-family: 'Dosis', sans-serif;
-$color: #EEEEEE;
+$first-color: #EEEEEE;
+$second-color: #00ADB5;
+$third-color: #222831;
 
-$primary-color: #00ADB5;
 $easing: all 0.5s cubic-bezier(.55, 0, .1, 1);
 $base-size: 20rem;
 
@@ -16,21 +17,21 @@ html {
 body {
     font-family: $font-family;
     margin: 0;
-    background-color: #222831;
+    background-color: $third-color;
 
-    &.dark {
-        background: #EEEEEE;
+    &.light {
+        background: $first-color;
 
         h1 {
-            color: #222831;
+            color: $third-color;
         }
 
         h2 {
-            color: #222831;
+            color: $third-color;
         }
 
         h3 {
-            color: #222831;
+            color: $third-color;
         }
 
         .article__container {
@@ -39,22 +40,23 @@ body {
                     .My-portfolio {
                         .menu__nav-container {
                             .a__button {
-                                border: 2px solid #00ADB5;
+                                border: 2px solid $second-color;
                                 padding: 15px;
                                 border-radius: 5px;
-                                color: #222831;
+                                color: $third-color;
                                 text-decoration: none;
                                 font-size: 30px;
                             }
 
                             .a__button:hover {
-                                background-color: #00ADB5;
-                                box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
-                                color: #EEEEEE;
+                                background-color: $second-color;
+                                box-shadow: 0 0 40px $second-color, 0 0 20px $second-color, 0 0 20px $second-color;
+                                color: $first-color;
                             }
                         }
                     }
                 }
+
                 .about__container {
                     display: flex;
                     width: 100%;
@@ -62,95 +64,116 @@ body {
                     justify-content: center;
                     align-items: center;
                     gap: 2rem;
-        
-                    // background: red;
+
                     .info__container {
                         display: flex;
                         justify-content: center;
                         flex-direction: row;
                         align-items: center;
-        
+
                         .figure__container {
                             padding: 2rem;
-        
+
                             .img__container {}
                         }
-        
+
                         .pCV__container {
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
-        
+
                             .p__container {
                                 p {
-                                    color: #222831;
+                                    color: $third-color;
                                 }
                             }
-        
+
                             .button__container {
                                 display: flex;
                                 gap: 5rem;
-        
+
                                 .a__button {
-                                    border: 2px solid #00ADB5;
+                                    border: 2px solid $second-color;
                                     padding: 15px;
                                     border-radius: 5px;
-                                    color: #222831;
+                                    color: $third-color;
                                     text-decoration: none;
                                     font-size: 30px;
                                 }
-        
+
                                 .a__button:hover {
-                                    background-color: #00ADB5;
-                                    box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
-                                    color: #222831;
+                                    background-color: $second-color;
+                                    box-shadow: 0 0 40px $second-color, 0 0 20px $second-color, 0 0 20px $second-color;
+                                    color: $third-color;
                                 }
                             }
                         }
                     }
                 }
+
                 .contact__container {
                     .form__container {
                         .label__card {
-                            color: #222831;
+                            color: $third-color;
                         }
-    
+
                         .input__card {
                             font-weight: 700;
                             font-size: 20px;
                             $font-family: $font-family;
                             // background: transparent;
-                            border: 3px solid #00ADB5;
+                            border: 3px solid $second-color;
                             border-radius: 0.5rem;
-                            color: #00ADB5;
+                            color: $second-color;
                             padding: 1rem;
                             resize: none;
                             width: 100%;
                             margin-bottom: 2rem;
                         }
-    
+
                         button {
-                            border: 2px solid #00ADB5;
+                            border: 2px solid $second-color;
                             padding: 15px;
                             border-radius: 5px;
-                            color: #222831;
+                            color: $third-color;
                             text-decoration: none;
                             font-size: 30px;
                             background: transparent;
                         }
-    
+
                         button:hover {
-                            background-color: #00ADB5;
-                            box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
-                            color: #EEEEEE;
+                            background-color: $second-color;
+                            box-shadow: 0 0 40px $second-color, 0 0 20px $second-color, 0 0 20px $second-color;
+                            color: $first-color;
                         }
                     }
-    
+
                 }
             }
         }
-        
+
+        .footer__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            margin: 10px;
+
+            small {
+                color: $third-color;
+
+                a {
+                    text-decoration: none;
+                    color: $third-color;
+                }
+
+                a:hover {
+                    color: $second-color;
+                }
+            }
+        }
+
     }
 
     #particles-js {
@@ -169,10 +192,6 @@ body {
                 width: 100%;
                 height: 100vh;
 
-                // background-image: url(../assets/bg.jpg); /* Se usa imagen para fondo */
-                // background-repeat: no-repeat;
-
-
                 .My-portfolio {
                     display: flex;
                     justify-content: center;
@@ -189,24 +208,41 @@ body {
 
 
                         .a__button {
-                            border: 2px solid #00ADB5;
+                            border: 2px solid $second-color;
                             padding: 15px;
                             border-radius: 5px;
-                            color: $color;
+                            color: $first-color;
                             text-decoration: none;
                             font-size: 30px;
                         }
 
                         .a__button:hover {
-                            background-color: #00ADB5;
-                            box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
-                            color: #222831;
+                            background-color: $second-color;
+                            box-shadow: 0 0 40px $second-color, 0 0 20px $second-color, 0 0 20px $second-color;
+                            color: $third-color;
+                        }
+                    }
+
+                    .languages__container{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 5px;
+
+                        button{
+                            background: transparent;
+                            border: none;
+                            cursor: pointer;
+                        }
+                        button:hover{
+                            scale: 1.2;
                         }
                     }
 
                     .moon-sun__container {
                         .toggle__container {
-                            background: #00ADB5;
+                            background: $second-color;
                             border-radius: 1000px;
                             border: none;
                             position: relative;
@@ -220,7 +256,7 @@ body {
                                 width: 35px;
                                 height: 35px;
                                 position: absolute;
-                                background: white;
+                                background: $first-color;
                                 top: 0;
                                 left: 0;
                                 right: unset;
@@ -233,7 +269,7 @@ body {
                                 &::after {
                                     right: 0;
                                     left: unset;
-                                    box-shadow: 0px 0px 5px 5px #00ADB5;
+                                    box-shadow: 0px 0px 5px 5px $second-color;
                                 }
                             }
 
@@ -252,9 +288,19 @@ body {
                                 line-height: 30px;
                                 display: block;
                                 background-color: none;
-                                color: white;
+                                color: $first-color;
                             }
                         }
+                    }
+
+                    .menu__container {
+                        background: none;
+                        border: none;
+                        font-size: 40px;
+                        padding: 0 20px;
+                        line-height: 60px;
+                        color: $second-color;
+                        display: none;
                     }
                 }
 
@@ -265,7 +311,6 @@ body {
                     align-items: center;
                     height: 80%;
 
-                    // padding-top: 5rem;
                     .titles__container {
                         display: flex;
                         flex-direction: column;
@@ -280,7 +325,7 @@ body {
                             font-size: 3em;
                             text-align: center;
                             display: flex;
-                            color: white;
+                            color: $first-color;
                             top: 0;
                             bottom: 0;
                             left: 0;
@@ -300,10 +345,6 @@ body {
                     .figure__container {
                         .img__container {
 
-                            // .photo__card{
-                            //     border-radius: 50%;
-                            //     // border: 10px solid black;
-                            // }
                             .badge {
                                 display: block;
                                 position: relative;
@@ -322,7 +363,7 @@ body {
 
                                     .text {
                                         transform: rotate(-45deg) translate(0px) rotate(-315deg);
-                                        background: rgba($primary-color, .5);
+                                        background: rgba($second-color, .5);
                                         width: $base-size;
                                         letter-spacing: 1rem;
                                         line-height: $base-size;
@@ -348,9 +389,9 @@ body {
                                     font-size: 2rem;
                                     font-family: Raleway, sans-serif;
                                     text-align: center;
-                                    color: #fff;
+                                    color: $first-color;
                                     border-radius: 50%;
-                                    background: $primary-color;
+                                    background: $second-color;
                                     transform: rotate(-180deg) translate(-($base-size / 2)) rotate(180deg);
                                     box-shadow: 0px .5rem 1rem rgba(0, 0, 0, .5);
                                     transition: $easing;
@@ -370,7 +411,6 @@ body {
                 align-items: center;
                 gap: 2rem;
 
-                // background: red;
                 .info__container {
                     display: flex;
                     justify-content: center;
@@ -393,7 +433,7 @@ body {
                             p {
                                 font-weight: 400;
                                 font-size: 50px;
-                                color: $color;
+                                color: $first-color;
                             }
                         }
 
@@ -402,18 +442,18 @@ body {
                             gap: 5rem;
 
                             .a__button {
-                                border: 2px solid #00ADB5;
+                                border: 2px solid $second-color;
                                 padding: 15px;
                                 border-radius: 5px;
-                                color: $color;
+                                color: $first-color;
                                 text-decoration: none;
                                 font-size: 30px;
                             }
 
                             .a__button:hover {
-                                background-color: #00ADB5;
-                                box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
-                                color: #222831;
+                                background-color: $second-color;
+                                box-shadow: 0 0 40px $second-color, 0 0 20px $second-color, 0 0 20px $second-color;
+                                color: $third-color;
                             }
                         }
                     }
@@ -648,7 +688,7 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    color: $color;
+                    color: $first-color;
                     font-weight: 700;
                     font-size: 20px;
 
@@ -662,10 +702,9 @@ body {
                         font-weight: 700;
                         font-size: 20px;
                         $font-family: $font-family;
-                        // background: transparent;
-                        border: 3px solid #00ADB5;
+                        border: 3px solid $second-color;
                         border-radius: 0.5rem;
-                        color: #00ADB5;
+                        color: $second-color;
                         padding: 1rem;
                         resize: none;
                         width: 100%;
@@ -673,19 +712,19 @@ body {
                     }
 
                     button {
-                        border: 2px solid #00ADB5;
+                        border: 2px solid $second-color;
                         padding: 15px;
                         border-radius: 5px;
-                        color: white;
+                        color: $first-color;
                         text-decoration: none;
                         font-size: 30px;
                         background: transparent;
                     }
 
                     button:hover {
-                        background-color: #00ADB5;
-                        box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
-                        color: #222831;
+                        background-color: $second-color;
+                        box-shadow: 0 0 40px $second-color, 0 0 20px $second-color, 0 0 20px $second-color;
+                        color: $third-color;
                     }
                 }
 
@@ -694,60 +733,57 @@ body {
     }
 
     .footer__container {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        $font-family: $font-family;
-        font-weight: 700;
-        font-size: 20px;
+        font-size: 30px;
+        margin: 10px;
 
         small {
-            color: $color;
+            color: $first-color;
 
             a {
                 text-decoration: none;
-                color: $color;
-                text-decoration: underline;
+                color: $first-color;
             }
 
             a:hover {
-                color: #00ADB5;
+                color: $second-color;
             }
         }
     }
+
 }
 
-
-
-
 h1 {
-    color: $color;
+    color: $first-color;
     font-weight: 400;
     font-size: 80px;
     margin-top: $gap;
-
 }
 
 h2 {
-    color: $color;
+    color: $first-color;
     font-weight: 600;
     font-size: 50px;
     margin: auto;
 }
 
 h3 {
-    color: $color;
+    color: $first-color;
     font-weight: 800;
     font-size: 50px;
     margin-top: $gap;
 }
 
 strong {
-    color: #00ADB5;
+    color: $second-color;
 }
 
-@media screen and (min-width: 767px) {}
+@media screen and (min-width: 760px) {
 
-@media screen and (min-width: 768px) and (max-width:1023px) {}
+}
+
+@media screen and (min-width: 761px) and (max-width:1023px) {
+
+}
