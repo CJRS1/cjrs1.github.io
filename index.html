@@ -31,13 +31,13 @@
                         <!-- Falta toogle para idiomas y colores-->
                     </nav>
                     <div class="languages__container">
-                        <button class="spanish">
+                        <button class="español" onclick="español()">
                             <img src="./assets/per.svg" alt="" width="50px">
                         </button>
-                        <button class="portuguese">
+                        <button class="portuguese" onclick="portuguese()">
                             <img src="./assets/brasil.svg" alt="" width="50px">
                         </button>
-                        <button class="english">
+                        <button class="english" onclick="english()">
                             <img src="./assets/eeuu.svg" alt="" width="50px">
                         </button>
                     </div>
@@ -56,7 +56,7 @@
 
                 <div class="inicio__container">
                     <div class="titles__container">
-                        <h1>¡Bienvenidos a mi Portafolio!</h1>
+                        <h1 id="h1">¡Bienvenidos a mi Portafolio!</h1>
 
 
                         <div class='console-container'><span id='text'></span>
@@ -95,9 +95,9 @@
                         <h3>Sobre mi</h3>
                         <div class="p__container">
                             <p>Mi nombre es <strong>Christian Reyes</strong> con nacionalidad peruana <img
-                                    src="./assets/peru.svg" alt="Peru" width="30px"> y tengo 27 años. Llevé un
+                                    src="./assets/peru.svg" alt="Peru" width="40px"> y tengo 27 años. Llevé un
                                 Bootcamp en
-                                el "Instituto de Educación Superior en Perú", en el cual
+                                TECSUP, en el cual
                                 desarrollé mis habilidades tanto en Frontend como Backend.</p>
                             <p>Me gusta el Desarrollo Web debido a que disfruto de estar en constante aprendizaje de
                                 forma
@@ -301,7 +301,7 @@
         </article>
     </main>
 
-    <footer class="footer__container">
+    <footer id="footer" class="footer__container">
         <small class="credits__container">
             Copyright © 2023 <a href="https://www.linkedin.com/in/crso/" class="linkedin__container" target="__blank"
                 rel="noopener noreferrer">Christian
@@ -315,7 +315,7 @@
     <script src="./js/particles-js/particlesjs-config.js"></script>
     <script src="./js/texteffect-js/texteffect.js"></script>
     <script src="./js/darkandlight-js/darkandlight.js"></script>
-    
+    <script src="./js/languages-js/languages.js"></script>
 </body>
 
 </html>

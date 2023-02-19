@@ -175,6 +175,7 @@ body .article__container .sections__container .home__container .My-portfolio .la
 }
 body .article__container .sections__container .home__container .My-portfolio .languages__container button:hover {
   scale: 1.2;
+  transition: 0.5s;
 }
 body .article__container .sections__container .home__container .My-portfolio .moon-sun__container .toggle__container {
   background: #00ADB5;
