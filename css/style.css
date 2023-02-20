@@ -15,12 +15,22 @@ body.light {
 }
 body.light h1 {
   color: #222831;
+  font-weight: 400;
+  font-size: 60px;
+  margin-top: 2.5rem;
 }
 body.light h2 {
   color: #222831;
+  font-weight: 600;
+  font-size: 50px;
+  margin: auto;
 }
 body.light h3 {
   color: #222831;
+  font-weight: 800;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 body.light .article__container .sections__container .home__container .My-portfolio .menu__nav-container .a__button {
   border: 2px solid #00ADB5;
@@ -28,7 +38,7 @@ body.light .article__container .sections__container .home__container .My-portfol
   border-radius: 5px;
   color: #222831;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
 }
 body.light .article__container .sections__container .home__container .My-portfolio .menu__nav-container .a__button:hover {
   background-color: #00ADB5;
@@ -71,34 +81,53 @@ body.light .article__container .sections__container .about__container .info__con
   border-radius: 5px;
   color: #222831;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
 }
 body.light .article__container .sections__container .about__container .info__container .pCV__container .button__container .a__button:hover {
   background-color: #00ADB5;
   box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
   color: #222831;
 }
-body.light .article__container .sections__container .contact__container .form__container .label__card {
+body.light .article__container .sections__container .contact__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body.light .article__container .sections__container .contact__container .form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #222831;
+  font-weight: 700;
+  font-size: 20px;
+}
+body.light .article__container .sections__container .contact__container .form__container .label__card {
+  margin-bottom: 0.5rem;
+  font-size: 25px;
 }
 body.light .article__container .sections__container .contact__container .form__container .input__card {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   border: 3px solid #00ADB5;
   border-radius: 0.5rem;
   color: #00ADB5;
-  padding: 1rem;
+  padding: 0.5rem;
   resize: none;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 5px;
 }
 body.light .article__container .sections__container .contact__container .form__container button {
+  margin-top: 15px;
   border: 2px solid #00ADB5;
   padding: 15px;
   border-radius: 5px;
   color: #222831;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   background: transparent;
 }
 body.light .article__container .sections__container .contact__container .form__container button:hover {
@@ -110,8 +139,8 @@ body.light .footer__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
-  margin: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 body.light .footer__container small {
   color: #222831;
@@ -154,7 +183,7 @@ body .article__container .sections__container .home__container .My-portfolio .me
   border-radius: 5px;
   color: #EEEEEE;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
 }
 body .article__container .sections__container .home__container .My-portfolio .menu__nav-container .a__button:hover {
   background-color: #00ADB5;
@@ -340,7 +369,7 @@ body .article__container .sections__container .about__container .info__container
 }
 body .article__container .sections__container .about__container .info__container .pCV__container .p__container p {
   font-weight: 400;
-  font-size: 50px;
+  font-size: 30px;
   color: #EEEEEE;
 }
 body .article__container .sections__container .about__container .info__container .pCV__container .button__container {
@@ -353,7 +382,7 @@ body .article__container .sections__container .about__container .info__container
   border-radius: 5px;
   color: #EEEEEE;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
 }
 body .article__container .sections__container .about__container .info__container .pCV__container .button__container .a__button:hover {
   background-color: #00ADB5;
@@ -381,29 +410,13 @@ body .article__container .sections__container .skills__container {
   justify-content: center;
   align-items: center;
 }
-body .article__container .sections__container .skills__container .general__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .article__container .sections__container .skills__container .general__container .gen__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-}
-body .article__container .sections__container .skills__container .general__container .gen__container img:hover {
-  scale: 1.2;
-  transition: 0.8s;
-}
 body .article__container .sections__container .skills__container .frontandback__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  margin-top: 0;
+  padding-top: 0;
 }
 body .article__container .sections__container .skills__container .frontandback__container .frontend__container {
   display: flex;
@@ -415,7 +428,7 @@ body .article__container .sections__container .skills__container .frontandback__
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 60px;
+  gap: 30px;
 }
 body .article__container .sections__container .skills__container .frontandback__container .frontend__container .languajes__container img:hover {
   scale: 1.2;
@@ -441,9 +454,26 @@ body .article__container .sections__container .skills__container .frontandback__
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 60px;
+  gap: 30px;
 }
 body .article__container .sections__container .skills__container .frontandback__container .backend__container .languajes__container img:hover {
+  scale: 1.2;
+  transition: 0.8s;
+}
+body .article__container .sections__container .general__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .article__container .sections__container .general__container .gen__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+body .article__container .sections__container .general__container .gen__container img:hover {
   scale: 1.2;
   transition: 0.8s;
 }
@@ -559,27 +589,28 @@ body .article__container .sections__container .contact__container .form__contain
   font-size: 20px;
 }
 body .article__container .sections__container .contact__container .form__container .label__card {
-  margin-bottom: 1rem;
-  font-size: 30px;
+  margin-bottom: 0.5rem;
+  font-size: 25px;
 }
 body .article__container .sections__container .contact__container .form__container .input__card {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   border: 3px solid #00ADB5;
   border-radius: 0.5rem;
   color: #00ADB5;
-  padding: 1rem;
+  padding: 0.5rem;
   resize: none;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 5px;
 }
 body .article__container .sections__container .contact__container .form__container button {
+  margin-top: 15px;
   border: 2px solid #00ADB5;
   padding: 15px;
   border-radius: 5px;
   color: #EEEEEE;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
   background: transparent;
 }
 body .article__container .sections__container .contact__container .form__container button:hover {
@@ -591,8 +622,8 @@ body .footer__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
-  margin: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 body .footer__container small {
   color: #EEEEEE;
@@ -608,7 +639,7 @@ body .footer__container small a:hover {
 h1 {
   color: #EEEEEE;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 60px;
   margin-top: 2.5rem;
 }
 
@@ -622,8 +653,9 @@ h2 {
 h3 {
   color: #EEEEEE;
   font-weight: 800;
-  font-size: 50px;
-  margin-top: 2.5rem;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 
 strong {

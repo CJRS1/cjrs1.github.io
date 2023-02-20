@@ -24,14 +24,24 @@ body {
 
         h1 {
             color: $third-color;
+            font-weight: 400;
+            font-size: 60px;
+            margin-top: $gap;
         }
-
+        
         h2 {
             color: $third-color;
+            font-weight: 600;
+            font-size: 50px;
+            margin: auto;
         }
-
+        
         h3 {
             color: $third-color;
+            font-weight: 800;
+            font-size: 40px;
+            margin-top: 10px;
+            margin-bottom: 25px;
         }
 
         .article__container {
@@ -45,7 +55,7 @@ body {
                                 border-radius: 5px;
                                 color: $third-color;
                                 text-decoration: none;
-                                font-size: 30px;
+                                font-size: 20px;
                             }
 
                             .a__button:hover {
@@ -99,7 +109,7 @@ body {
                                     border-radius: 5px;
                                     color: $third-color;
                                     text-decoration: none;
-                                    font-size: 30px;
+                                    font-size: 20px;
                                 }
 
                                 .a__button:hover {
@@ -113,43 +123,62 @@ body {
                 }
 
                 .contact__container {
+                    width: 100%;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
                     .form__container {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        color: $third-color;
+                        font-weight: 700;
+                        font-size: 20px;
+    
                         .label__card {
-                            color: $third-color;
+                            $font-family: $font-family;
+                            margin-bottom: 0.5rem;
+                            font-size: 25px;
                         }
-
+    
                         .input__card {
-                            font-weight: 700;
+                            font-weight: 500;
                             font-size: 20px;
                             $font-family: $font-family;
-                            // background: transparent;
                             border: 3px solid $second-color;
                             border-radius: 0.5rem;
                             color: $second-color;
-                            padding: 1rem;
+                            padding: 0.5rem;
                             resize: none;
                             width: 100%;
-                            margin-bottom: 2rem;
+                            margin-bottom: 5px;
                         }
-
+    
                         button {
+                            margin-top: 15px;
                             border: 2px solid $second-color;
                             padding: 15px;
                             border-radius: 5px;
                             color: $third-color;
                             text-decoration: none;
-                            font-size: 30px;
+                            font-size: 20px;
                             background: transparent;
                         }
-
+    
                         button:hover {
                             background-color: $second-color;
                             box-shadow: 0 0 40px $second-color, 0 0 20px $second-color, 0 0 20px $second-color;
                             color: $first-color;
                         }
                     }
-
+    
                 }
+
+
             }
         }
 
@@ -157,17 +186,17 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 30px;
-            margin: 10px;
-
+            font-size: 20px;
+            margin-bottom: 10px;
+    
             small {
                 color: $third-color;
-
+    
                 a {
                     text-decoration: none;
                     color: $third-color;
                 }
-
+    
                 a:hover {
                     color: $second-color;
                 }
@@ -212,7 +241,7 @@ body {
                             border-radius: 5px;
                             color: $first-color;
                             text-decoration: none;
-                            font-size: 30px;
+                            font-size: 20px;
                         }
 
                         .a__button:hover {
@@ -433,7 +462,7 @@ body {
                         .p__container {
                             p {
                                 font-weight: 400;
-                                font-size: 50px;
+                                font-size: 30px;
                                 color: $first-color;
                             }
                         }
@@ -448,7 +477,7 @@ body {
                                 border-radius: 5px;
                                 color: $first-color;
                                 text-decoration: none;
-                                font-size: 30px;
+                                font-size: 20px;
                             }
 
                             .a__button:hover {
@@ -484,34 +513,13 @@ body {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-
-                .general__container {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-
-                    .gen__container {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 60px;
-
-                        img:hover {
-                            scale: 1.2;
-                            transition: 0.8s;
-                        }
-                    }
-                }
-
                 .frontandback__container {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    gap: 3rem;
-
+                    margin-top: 0;
+                    padding-top: 0;
                     .frontend__container {
                         display: flex;
                         flex-direction: column;
@@ -522,8 +530,8 @@ body {
                             display: grid;
                             grid-template-columns: 1fr 1fr 1fr;
                             grid-template-rows: 1fr 1fr 1fr;
-                            gap: 60px;
-
+                            gap: 30px;
+                            
                             img:hover {
                                 scale: 1.2;
                                 transition: 0.8s;
@@ -536,7 +544,7 @@ body {
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-
+                        
                         .figure__container {
                             .img__container {
                                 img:hover {
@@ -557,7 +565,7 @@ body {
                             display: grid;
                             grid-template-columns: 1fr 1fr 1fr;
                             grid-template-rows: 1fr 1fr 1fr;
-                            gap: 60px;
+                            gap: 30px;
 
                             img:hover {
                                 scale: 1.2;
@@ -567,7 +575,26 @@ body {
                     }
                 }
             }
+            .general__container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
+                .gen__container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+
+                    img:hover {
+                        scale: 1.2;
+                        transition: 0.8s;
+                    }
+                }
+            }
+            
             .experiencie__container {
                 width: 100%;
                 height: 100vh;
@@ -683,7 +710,6 @@ body {
                 justify-content: center;
                 align-items: center;
 
-
                 .form__container {
                     display: flex;
                     flex-direction: column;
@@ -695,30 +721,31 @@ body {
 
                     .label__card {
                         $font-family: $font-family;
-                        margin-bottom: 1rem;
-                        font-size: 30px;
+                        margin-bottom: 0.5rem;
+                        font-size: 25px;
                     }
 
                     .input__card {
-                        font-weight: 700;
+                        font-weight: 500;
                         font-size: 20px;
                         $font-family: $font-family;
                         border: 3px solid $second-color;
                         border-radius: 0.5rem;
                         color: $second-color;
-                        padding: 1rem;
+                        padding: 0.5rem;
                         resize: none;
                         width: 100%;
-                        margin-bottom: 2rem;
+                        margin-bottom: 5px;
                     }
 
                     button {
+                        margin-top: 15px;
                         border: 2px solid $second-color;
                         padding: 15px;
                         border-radius: 5px;
                         color: $first-color;
                         text-decoration: none;
-                        font-size: 30px;
+                        font-size: 20px;
                         background: transparent;
                     }
 
@@ -737,8 +764,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 30px;
-        margin: 10px;
+        font-size: 20px;
+        margin-bottom: 10px;
 
         small {
             color: $first-color;
@@ -759,7 +786,7 @@ body {
 h1 {
     color: $first-color;
     font-weight: 400;
-    font-size: 80px;
+    font-size: 60px;
     margin-top: $gap;
 }
 
@@ -773,8 +800,9 @@ h2 {
 h3 {
     color: $first-color;
     font-weight: 800;
-    font-size: 50px;
-    margin-top: $gap;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 strong {
