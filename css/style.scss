@@ -814,7 +814,6 @@ strong {
 
 @media screen and (max-width: 760px) {
 body{
-
     #particles-js {
 
         position: fixed;
@@ -830,7 +829,7 @@ body{
     .article__container {
         .sections__container {
             .home__container {
-                width: 100vh;
+                width: 100%;
                 height: 100vh;
 
                 header.My-portfolio {
@@ -947,7 +946,7 @@ body{
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    height: 90%;
+                    width: 100%;
                     margin-top: 0;
 
                     .titles__container {
@@ -1070,16 +1069,17 @@ body{
                         align-items: center;
 
                         .p__container {
+                            width: 90%;
                             p {
                                 font-weight: 400;
-                                font-size: 30px;
+                                font-size: 20px;
                                 color: $first-color;
                             }
                         }
 
                         .button__container {
                             display: flex;
-                            gap: 5rem;
+                            gap: 1.2rem;
 
                             .a__button {
                                 border: 2px solid $second-color;
