@@ -1,8 +1,6 @@
 if(screen.width>1024){
         consoleText(['HOLA, SOY CHRISTIAN REYES', 'INGENIERO MECATRONICO','DESARROLLADOR FRONTEND','DESARROLLADOR BACKEND','OLÁ, SOU CHRISTIAN REYES', 'ENGENHEIRO MECATRÔNICO', 'DESENVOLVEDOR FRONTEND','DESENVOLVEDOR BACKEND','HI, I AM CHRISTIAN REYES', 'MECHATRONIC ENGINEER', 'FRONTEND DEVELOPER','BACKEND DEVELOPER'], 'text', ['#00ADB5']);
-} else if(screen.width<1024){
-    consoleText(['HOLA', 'SOY', 'INGENIERO', 'MECATRONICO', 'DESARROLLADOR','FRONTEND','BACKEND'], 'text', ['#00ADB5']);
-}
+} 
 
 function consoleText(words, id, colors) {
         if (colors === undefined) colors = ['#fff'];
