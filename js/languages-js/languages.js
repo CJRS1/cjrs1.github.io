@@ -4,15 +4,17 @@ const skills = document.getElementById('skills');
 const experience = document.getElementById('experience');
 const contact = document.getElementById('contact');
 const footer = document.getElementById('footer');
+var a = 1;
 
 const english = ()=>{
+
     home.querySelector('h1').textContent = "Welcome to my portfolio"
     home.querySelectorAll('.My-portfolio .menu__nav-container >a')[0].textContent = "About me";
     home.querySelectorAll('.My-portfolio .menu__nav-container >a')[1].textContent = "Technologies";
     home.querySelectorAll('.My-portfolio .menu__nav-container >a')[2].textContent = "Projects";
     home.querySelectorAll('.My-portfolio .menu__nav-container >a')[3].textContent = "Contact me";
     home.querySelector('.badge .text').textContent = "Hellow";
-    
+
     about.querySelector('h3').textContent = "About me";
     about.querySelectorAll('.p__container >p')[0].innerHTML = "My name is <strong>Christian Reyes</strong> with peruvian    nationality, <img src = \"../../assets/peru.svg\" alt=\"Peru\" width=\"40px\"> I'm 27 years old. I took a Bootcamp at TECSUP, in which I developed my frontend and backend skills"
     about.querySelectorAll('.p__container >p')[1].textContent = "I like web development because I enjoy being in constant learning in a self-taught way and I like technologies related to the Internet";
@@ -38,13 +40,14 @@ const english = ()=>{
 }
 
 const portuguese = () =>{
+
     home.querySelector('h1').textContent = "Bem-vindo ao meu portfólio"
     home.querySelectorAll('.My-portfolio .menu__nav-container >a')[0].textContent = "Sobre mim";
     home.querySelectorAll('.My-portfolio .menu__nav-container >a')[1].textContent = "Tecnologias";
     home.querySelectorAll('.My-portfolio .menu__nav-container >a')[2].textContent = "Projetos";
     home.querySelectorAll('.My-portfolio .menu__nav-container >a')[3].textContent = "Contata-me";
     home.querySelector('.badge .text').textContent = "Olá";
-    
+
     about.querySelector('h3').textContent = "Sobre mim";
     about.querySelectorAll('.p__container >p')[0].innerHTML = "Meu nome é <strong>Christian Reyes</strong> com nacionalidade peruana, <img src = \"../../assets/peru.svg\" alt=\"Peru\" width=\"40px\"> tenho 27 anos. Fiz um Bootcamp na TECSUP, onde desenvolvi minhas habilidades de frontend e backend"
     about.querySelectorAll('.p__container >p')[1].textContent = "Gosto de desenvolvimento web porque gosto de estar em constante aprendizado autodidata e gosto de tecnologias relacionadas à Internet";
@@ -70,13 +73,14 @@ const portuguese = () =>{
 }
 
 const español = () =>{
+
     home.querySelector('h1').textContent = "¡Bienvenidos a mi Portafolio!"
     home.querySelectorAll('.My-portfolio .menu__nav-container >a')[0].textContent = "Sobre mi";
     home.querySelectorAll('.My-portfolio .menu__nav-container >a')[1].textContent = "Tecnologías";
     home.querySelectorAll('.My-portfolio .menu__nav-container >a')[2].textContent = "Proyectos";
     home.querySelectorAll('.My-portfolio .menu__nav-container >a')[3].textContent = "Contáctame";
-    home.querySelector('.badge .text').textContent = "Olá";
-    
+    home.querySelector('.badge .text').textContent = "Hola";
+
     about.querySelector('h3').textContent = "Sobre mim";
     about.querySelectorAll('.p__container >p')[0].innerHTML = "Mi nombre es <strong>Christian Reyes</strong> con nacionalidad peruana, <img src = \"../../assets/peru.svg\" alt=\"Peru\" width=\"40px\"> tengo 27 anos. Hice un Bootcamp en TECSUP, donde desarrollé mis habilidades frontend e backend"
     about.querySelectorAll('.p__container >p')[1].textContent = "Me gusta el Desarrollo Web debido a que disfruto de estar en constante aprendizaje de forma autodidacta y me gustan las tecnologías relacionadas con internet.";
@@ -100,3 +104,4 @@ const español = () =>{
     
     footer.querySelector('.footer__container small').innerHTML = "Copyright © 2023 <a href=\"https://www.linkedin.com/in/crso/\" class=\"linkedin__container\" target=\"__blank\" rel=\"noopener noreferrer\">Christian Reyes</a>. Todos los derechos reservados";
 }
+

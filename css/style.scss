@@ -187,7 +187,6 @@ body {
 
     .article__container {
         .sections__container {
-
             .home__container {
                 width: 100%;
                 height: 100vh;
@@ -196,7 +195,7 @@ body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    gap: 500px;
+                    gap: 100px;
 
                     .menu__nav-container {
                         display: flex;
@@ -332,7 +331,7 @@ body {
                             left: 0;
                             right: 0;
                             margin: auto;
-
+                            font-size: 60px;
                         }
 
                         .console-underscore {
@@ -340,12 +339,13 @@ body {
                             position: relative;
                             top: -0.14em;
                             left: 10px;
+                            
                         }
                     }
 
                     .figure__container {
+                        margin-right: 100px;
                         .img__container {
-
                             .badge {
                                 display: block;
                                 position: relative;
@@ -784,6 +784,7 @@ strong {
 @media screen and (min-width: 760px) {
 
 }
+
 
 @media screen and (min-width: 761px) and (max-width:1023px) {
 

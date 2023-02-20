@@ -138,7 +138,7 @@ body .article__container .sections__container .home__container .My-portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 500px;
+  gap: 100px;
 }
 body .article__container .sections__container .home__container .My-portfolio .menu__nav-container {
   display: flex;
@@ -257,12 +257,16 @@ body .article__container .sections__container .home__container .inicio__containe
   left: 0;
   right: 0;
   margin: auto;
+  font-size: 60px;
 }
 body .article__container .sections__container .home__container .inicio__container .titles__container .console-underscore {
   display: inline-block;
   position: relative;
   top: -0.14em;
   left: 10px;
+}
+body .article__container .sections__container .home__container .inicio__container .figure__container {
+  margin-right: 100px;
 }
 body .article__container .sections__container .home__container .inicio__container .figure__container .img__container .badge {
   display: block;
