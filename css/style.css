@@ -158,6 +158,7 @@ body #particles-js {
   width: 100%;
   height: 100%;
   z-index: -1;
+  margin: 0;
 }
 body .article__container .sections__container .home__container {
   width: cover;
@@ -682,15 +683,27 @@ strong {
     height: 100vh;
   }
   body.light .article__container .sections__container .home__container header.My-portfolio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #222831;
+    width: 100%;
+    z-index: 2;
   }
-  body.light .article__container .sections__container .home__container header.My-portfolio nav.menu__nav-container {
-    display: none;
+  body.light .article__container .sections__container .home__container header.My-portfolio button.menu__container {
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0;
+    line-height: 60px;
+    color: #00ADB5;
+    display: block;
+    margin-left: 20px;
   }
-  body.light .article__container .sections__container .home__container header.My-portfolio nav.menu__nav-container .a__button {
+  body.light .article__container .sections__container .home__container header.My-portfolio button.menu__container .menu__nav-container {
+    flex-direction: column;
+  }
+  body.light .article__container .sections__container .home__container header.My-portfolio button.menu__container .a__button {
     border: 2px solid #00ADB5;
     padding: 15px;
     border-radius: 5px;
@@ -698,7 +711,7 @@ strong {
     text-decoration: none;
     font-size: 20px;
   }
-  body.light .article__container .sections__container .home__container header.My-portfolio nav.menu__nav-container .a__button:hover {
+  body.light .article__container .sections__container .home__container header.My-portfolio button.menu__container .a__button:hover {
     background-color: #00ADB5;
     box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
     color: #222831;
@@ -765,16 +778,6 @@ strong {
     display: block;
     background-color: none;
     color: #EEEEEE;
-  }
-  body.light .article__container .sections__container .home__container header.My-portfolio .menu__container {
-    background: none;
-    border: none;
-    font-size: 40px;
-    padding: 0;
-    line-height: 60px;
-    color: #00ADB5;
-    display: block;
-    margin-left: 20px;
   }
   body.light .article__container .sections__container .home__container div.inicio__container {
     display: flex;
@@ -1190,16 +1193,31 @@ strong {
     height: 100vh;
   }
   body .article__container .sections__container .home__container header.My-portfolio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #EEEEEE;
+    width: 100%;
+    z-index: 2;
   }
   body .article__container .sections__container .home__container header.My-portfolio nav.menu__nav-container {
-    display: none;
+    flex-direction: column;
+    margin-left: 20px;
+    background: #222831;
+    position: fixed;
+    opacity: 0.9;
+    left: 0;
+    top: 100px;
+    width: 90%;
+    height: 70%;
+    overflow-y: auto;
+    z-index: 2;
+    border-radius: 5px;
+    left: 100%;
+    transition: left 0.3s;
   }
   body .article__container .sections__container .home__container header.My-portfolio nav.menu__nav-container .a__button {
-    border: 2px solid #00ADB5;
+    border: none;
     padding: 15px;
     border-radius: 5px;
     color: #EEEEEE;
@@ -1207,9 +1225,12 @@ strong {
     font-size: 20px;
   }
   body .article__container .sections__container .home__container header.My-portfolio nav.menu__nav-container .a__button:hover {
-    background-color: #00ADB5;
-    box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
+    background-color: #EEEEEE;
+    box-shadow: 0 0 40px #EEEEEE, 0 0 20px #EEEEEE, 0 0 20px f;
     color: #222831;
+  }
+  body .article__container .sections__container .home__container header.My-portfolio nav.nav-visible {
+    left: 0;
   }
   body .article__container .sections__container .home__container header.My-portfolio .languages__container {
     display: flex;
@@ -1282,7 +1303,20 @@ strong {
     line-height: 60px;
     color: #00ADB5;
     display: block;
-    margin-left: 20px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  body .article__container .sections__container .home__container header.My-portfolio .menu__container .fa-bars {
+    display: block;
+  }
+  body .article__container .sections__container .home__container header.My-portfolio .menu__container .fa-rectangle-xmark {
+    display: none;
+  }
+  body .article__container .sections__container .home__container header.My-portfolio .menu__container i.visible {
+    display: block;
+  }
+  body .article__container .sections__container .home__container header.My-portfolio .menu__container i.invisible {
+    display: none;
   }
   body .article__container .sections__container .home__container div.inicio__container {
     display: flex;

@@ -213,6 +213,7 @@ body {
         width: 100%;
         height: 100%;
         z-index: -1;
+        margin:0;
     }
 
     .article__container {
@@ -833,16 +834,29 @@ body{
                 .home__container {
                     width: 100%;
                     height: 100vh;
-    
+                    
                     header.My-portfolio {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-top: 20px;
-    
-                        nav.menu__nav-container {
-                            display: none;
-    
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        background: $third-color;
+                        width: 100%;
+                        z-index: 2;
+                        
+                        button.menu__container {
+                            background: none;
+                            border: none;
+                            font-size: 40px;
+                            padding: 0;
+                            line-height: 60px;
+                            color: $second-color;
+                            display: block;
+                            margin-left: 20px;
+
+                        .menu__nav-container {
+                            flex-direction: column;
+                            
+                            }
                             .a__button {
                                 border: 2px solid $second-color;
                                 padding: 15px;
@@ -931,16 +945,6 @@ body{
                             }
                         }
     
-                        .menu__container {
-                            background: none;
-                            border: none;
-                            font-size: 40px;
-                            padding: 0;
-                            line-height: 60px;
-                            color: $second-color;
-                            display: block;
-                            margin-left: 20px;
-                        }
                     }
     
                     div.inicio__container {
@@ -1438,28 +1442,45 @@ body{
                 height: 100vh;
 
                 header.My-portfolio {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 20px;
-
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background: $first-color;
+                    width: 100%;
+                    z-index: 2;
                     nav.menu__nav-container {
-                        display: none;
+                        flex-direction: column;
+                        margin-left: 20px;
+                        background: $third-color;
+                        position: fixed;
+                        opacity: 0.9;
+                        left: 0;
+                        top: 100px;
+                        width: 90%;
+                        height: 70%;
+                        overflow-y: auto;
+                        z-index: 2;
+                        border-radius: 5px;
+                        left: 100%;
+                        transition: left 0.3s;
 
                         .a__button {
-                            border: 2px solid $second-color;
+                            border: none;
                             padding: 15px;
                             border-radius: 5px;
                             color: $first-color;
                             text-decoration: none;
                             font-size: 20px;
                         }
-
                         .a__button:hover {
-                            background-color: $second-color;
-                            box-shadow: 0 0 40px $second-color, 0 0 20px $second-color, 0 0 20px $second-color;
+                            background-color: $first-color;
+                            box-shadow: 0 0 40px $first-color, 0 0 20px $first-color, 0 0 20px f;
                             color: $third-color;
                         }
+                    }
+                    
+                    nav.nav-visible{
+                        left: 0;
                     }
 
                     .languages__container{
@@ -1542,7 +1563,20 @@ body{
                         line-height: 60px;
                         color: $second-color;
                         display: block;
-                        margin-left: 20px;
+                        margin: 20px;
+                        cursor: pointer;
+                        .fa-bars{
+                            display: block;
+                        }
+                        .fa-rectangle-xmark{
+                            display: none;
+                        }
+                        i.visible{
+                            display: block;
+                        }
+                        i.invisible{
+                            display: none;
+                        }
                     }
                 }
 
@@ -2023,9 +2057,6 @@ strong {
 }
 }
 }
-
-
-
 
 
 @media screen and (min-width: 761px) and (max-width:1023px) {
