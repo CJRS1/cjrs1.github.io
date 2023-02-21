@@ -32,6 +32,14 @@ body.light h3 {
   margin-top: 10px;
   margin-bottom: 25px;
 }
+body.light .article__container .sections__container .home__container .My-portfolio .menu__nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 body.light .article__container .sections__container .home__container .My-portfolio .menu__nav-container .a__button {
   border: 2px solid #00ADB5;
   padding: 15px;
@@ -700,21 +708,37 @@ strong {
     display: block;
     margin-left: 20px;
   }
-  body.light .article__container .sections__container .home__container header.My-portfolio button.menu__container .menu__nav-container {
+  body.light .article__container .sections__container .home__container header.My-portfolio nav.menu__nav-container {
     flex-direction: column;
+    margin-left: 20px;
+    background: #EEEEEE;
+    position: fixed;
+    opacity: 0.9;
+    left: 0;
+    top: 100px;
+    width: 90%;
+    height: 70%;
+    overflow-y: auto;
+    z-index: 2;
+    border-radius: 5px;
+    left: 100%;
+    transition: left 0.3s;
   }
-  body.light .article__container .sections__container .home__container header.My-portfolio button.menu__container .a__button {
-    border: 2px solid #00ADB5;
+  body.light .article__container .sections__container .home__container header.My-portfolio nav.menu__nav-container a.a__button {
+    border: none;
     padding: 15px;
     border-radius: 5px;
-    color: #EEEEEE;
+    color: #222831;
     text-decoration: none;
     font-size: 20px;
   }
-  body.light .article__container .sections__container .home__container header.My-portfolio button.menu__container .a__button:hover {
-    background-color: #00ADB5;
-    box-shadow: 0 0 40px #00ADB5, 0 0 20px #00ADB5, 0 0 20px #00ADB5;
-    color: #222831;
+  body.light .article__container .sections__container .home__container header.My-portfolio nav.menu__nav-container a.a__button:hover {
+    background-color: #222831;
+    box-shadow: 0 0 40px #222831, 0 0 20px #222831, 0 0 20px f;
+    color: #EEEEEE;
+  }
+  body.light .article__container .sections__container .home__container header.My-portfolio nav.nav-visible {
+    left: 0;
   }
   body.light .article__container .sections__container .home__container header.My-portfolio .languages__container {
     display: flex;
