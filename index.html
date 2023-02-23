@@ -57,7 +57,7 @@
 
                 <div class="inicio__container">
                     <div class="titles__container">
-                        <h1 id="h1">¡Bienvenidos a mi Portafolio!</h1>
+                        <h1 >¡Bienvenidos a mi Portafolio!</h1>
 
 
                         <div class='console-container'><span id='text'></span>
@@ -68,7 +68,7 @@
 
                     </div>
 
-                    <figcaption class="figure__container">
+                    <div class="figure__container">
                         <figure class="img__container">
                             <!-- <img class="photo__card" src="../assets/Christian.png" alt="" width="500px" > -->
                             <div class="badge">
@@ -76,21 +76,21 @@
                             </div>
 
                         </figure>
-                    </figcaption>
+                    </div>
                 </div>
             </section>
 
             <section id="about" class="about__container">
                 <div class="info__container">
 
-                    <figcaption class="figure__container">
+                    <div class="figure__container">
                         <figure class="img__container">
                             <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_iorpbol0.json"
                                 background="transparent" speed="1" style="width: 300px; height: 300px;" loop
                                 autoplay>
                             </lottie-player>
                         </figure>
-                    </figcaption>
+                    </div>
 
                     <div class="pCV__container">
                         <h3>Sobre mi</h3>
@@ -150,7 +150,7 @@
     
                         <div class="brain__container">
     
-                            <figcaption class="figure__container">
+                            <div class="figure__container">
                                 <figure class="img__container">
                                     <script
                                         src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -159,7 +159,7 @@
                                         autoplay></lottie-player>
     
                                 </figure>
-                            </figcaption>
+                            </div>
                         </div>
     
                         <div class=" backend__container">
@@ -284,16 +284,16 @@
                 <form action="https://formsubmit.co/e177d422f7cc237c2095ad95c69f88c6" method="POST" class="form__container">
 
                     <label for="name" class="label__card">Nombre :</label>
-                    <input type="text" name="name" class="input__card" placeholder="Ej. Christian">
+                    <input id="name" type="text" name="name" class="input__card" placeholder="Ej. Christian">
 
                     <label for="lastname" class="label__card">Apellido :</label>
-                    <input type="text" name="lastname" class="input__card" placeholder="Ej. Reyes">
+                    <input id = "lastname" type="text" name="lastname" class="input__card" placeholder="Ej. Reyes">
 
                     <label for="email" class="label__card">Email :</label>
-                    <input type="email" name="email" class="input__card" placeholder="Ej. reyes.christian@pucp.pe">
+                    <input id="email" type="email" name="email" class="input__card" placeholder="Ej. reyes.christian@pucp.pe">
 
                     <label for="comments" class="label__card">Mensaje :</label>
-                    <textarea name="comments" class="input__card" cols="40" rows="8"
+                    <textarea id="comments" name="comments" class="input__card" cols="40" rows="8"
                         placeholder="Hola Christian, ¿cómo te va? Te escribo por si te interesaría ..."
                         required></textarea>
                     <button type='submit' value="send" class='btn btn-primary'>Enviar mensaje</button>
