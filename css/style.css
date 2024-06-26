@@ -560,12 +560,16 @@ body .article__container .sections__container .experiencie__container .carrousel
 }
 body .article__container .sections__container .experiencie__container .carrousel__container .projects__container a h4 {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   font-size: 35px;
-  line-height: 23px;
-  color: black;
+  line-height: 35px;
+  color: white;
   padding: 15px;
   margin: 0;
+  text-align: center;
 }
 body .article__container .sections__container .experiencie__container .carrousel__container .projects__container a h4 small {
   font-size: 30px;
@@ -576,6 +580,7 @@ body .article__container .sections__container .experiencie__container .carrousel
   height: 300px;
   background: yellow;
   border-radius: 15px;
+  transition: 0.5s ease-in-out;
 }
 body .article__container .sections__container .experiencie__container .carrousel__container .projects__container a .imagen img {
   -o-object-fit: cover;
@@ -584,10 +589,14 @@ body .article__container .sections__container .experiencie__container .carrousel
   width: 100%;
   border-radius: 4px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
+  filter: brightness(0.4);
 }
-body .article__container .sections__container .experiencie__container .carrousel__container .projects__container a .imagen img:hover {
-  opacity: 0.85;
+body .article__container .sections__container .experiencie__container .carrousel__container .projects__container a .imagen:hover img {
+  filter: brightness(1);
+}
+body .article__container .sections__container .experiencie__container .carrousel__container .projects__container a .imagen:hover h4 {
+  display: none;
 }
 body .article__container .sections__container .contact__container {
   width: 100%;
