@@ -10,6 +10,16 @@ body {
   margin: 0;
   background-color: #222831;
 }
+body #particles-js {
+  position: fixed;
+  top: 0;
+  width: auto;
+  height: 100%;
+  z-index: -1;
+}
+body #particles-js canvas {
+  width: 100%;
+}
 body.light {
   background: #EEEEEE;
 }
@@ -159,14 +169,6 @@ body.light .footer__container small a {
 }
 body.light .footer__container small a:hover {
   color: #00ADB5;
-}
-body #particles-js {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  margin: 0;
 }
 body .article__container .sections__container .home__container {
   width: cover;
@@ -446,6 +448,7 @@ body .article__container .sections__container .skills__container .frontandback__
 body .article__container .sections__container .skills__container .frontandback__container .frontend__container .languajes__container img:hover {
   scale: 1.2;
   transition: 0.8s;
+  cursor: pointer;
 }
 body .article__container .sections__container .skills__container .frontandback__container .brain__container {
   display: flex;
@@ -456,6 +459,7 @@ body .article__container .sections__container .skills__container .frontandback__
 body .article__container .sections__container .skills__container .frontandback__container .brain__container .figure__container .img__container img:hover {
   scale: 1.2;
   transition: 0.8s;
+  cursor: pointer;
 }
 body .article__container .sections__container .skills__container .frontandback__container .backend__container {
   display: flex;
@@ -472,6 +476,7 @@ body .article__container .sections__container .skills__container .frontandback__
 body .article__container .sections__container .skills__container .frontandback__container .backend__container .languajes__container img:hover {
   scale: 1.2;
   transition: 0.8s;
+  cursor: pointer;
 }
 body .article__container .sections__container .general__container {
   display: flex;
@@ -480,15 +485,15 @@ body .article__container .sections__container .general__container {
   align-items: center;
 }
 body .article__container .sections__container .general__container .gen__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 30px;
 }
 body .article__container .sections__container .general__container .gen__container img:hover {
   scale: 1.2;
   transition: 0.8s;
+  cursor: pointer;
 }
 body .article__container .sections__container .experiencie__container {
   width: 100%;
@@ -679,8 +684,8 @@ strong {
   body.light #particles-js {
     position: fixed;
     top: 0;
-    width: auto;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
   }
   body.light #particles-js canvas {
@@ -1201,16 +1206,6 @@ strong {
   }
   body.light strong {
     color: #00ADB5;
-  }
-  body #particles-js {
-    position: fixed;
-    top: 0;
-    width: auto;
-    height: 100%;
-    z-index: -1;
-  }
-  body #particles-js canvas {
-    width: 100%;
   }
   body .article__container .sections__container .home__container {
     width: 100%;

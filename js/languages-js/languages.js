@@ -16,8 +16,8 @@ const english = ()=>{
     home.querySelector('.badge .text').textContent = "Hellow";
 
     about.querySelector('h3').textContent = "About me";
-    about.querySelectorAll('.p__container >p')[0].innerHTML = "My name is <strong>Christian Reyes</strong> with peruvian    nationality, <img src = \"../../assets/peru.svg\" alt=\"Peru\" width=\"40px\"> I'm 27 years old. I took a Bootcamp at TECSUP, in which I developed my frontend and backend skills"
-    about.querySelectorAll('.p__container >p')[1].textContent = "I like web development because I enjoy being in constant learning in a self-taught way and I like technologies related to the Internet";
+    about.querySelectorAll('.p__container >p')[0].innerHTML = "My name is <strong>Christian Reyes</strong>, I am Peruvian, <img src = \"../../assets/peru.svg\" alt=\"Peru\" width=\"40px\"> I am 28 years old, a Mechatronics Engineer, and a FullStack Web Developer with 2 years of experience."
+    about.querySelectorAll('.p__container >p')[1].textContent = "Currently, I am pursuing a <strong>Master's degree in DevOps</strong>, where I focus on advancing strategies to enhance the security of the applications I develop. This academic program has provided me with the opportunity to explore new technologies and methodologies that efficiently optimize development processes, ensuring faster and more robust software deliveries.";
     about.querySelectorAll('.button__container >a')[0].textContent = "Download CV";
     about.querySelectorAll('.button__container >a')[1].textContent = "Contact me";
     
@@ -49,8 +49,8 @@ const portuguese = () =>{
     home.querySelector('.badge .text').textContent = "Olá";
 
     about.querySelector('h3').textContent = "Sobre mim";
-    about.querySelectorAll('.p__container >p')[0].innerHTML = "Meu nome é <strong>Christian Reyes</strong> com nacionalidade peruana, <img src = \"../../assets/peru.svg\" alt=\"Peru\" width=\"40px\"> tenho 27 anos. Fiz um Bootcamp na TECSUP, onde desenvolvi minhas habilidades de frontend e backend"
-    about.querySelectorAll('.p__container >p')[1].textContent = "Gosto de desenvolvimento web porque gosto de estar em constante aprendizado autodidata e gosto de tecnologias relacionadas à Internet";
+    about.querySelectorAll('.p__container >p')[0].innerHTML = "Meu nome é <strong>Christian Reyes</strong>, sou peruano <img src = \"../../assets/peru.svg\" alt=\"Peru\" width=\"40px\">. Tenho 28 anos, sou Engenheiro Mecatrônico e Desenvolvedor Web FullStack com 2 anos de experiência."
+    about.querySelectorAll('.p__container >p')[1].textContent = "Atualmente, estou cursando um <strong>Mestrado em DevOps</strong>, onde me dedico a aprofundar estratégias avançadas para melhorar a segurança das aplicações que desenvolvo. Este programa acadêmico me proporcionou a oportunidade de explorar novas tecnologias e metodologias que otimizam de maneira eficiente os processos de desenvolvimento, garantindo entregas de software mais rápidas e robustas.";
     about.querySelectorAll('.button__container >a')[0].textContent = "Download CV";
     about.querySelectorAll('.button__container >a')[1].textContent = "Contate-me";
     
